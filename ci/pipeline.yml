@@ -1,0 +1,17 @@
+---
+resources:
+- name: my-git-repo
+  type: git
+  source:
+    uri: https://github.com/leo-baltus-fake/ci-hello
+    branch: basic-helloworld
+    username: ((github_username))
+    password: ((github_password))
+
+jobs:
+- name: hello-world-job
+  public: true
+  plan:
+  - get: my-git-repo
+  - task: task_print-hello-world
+    file: my-git-repo/ci/task-hello-world.yml
