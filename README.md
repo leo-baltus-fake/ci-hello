@@ -13,4 +13,4 @@ fly -t leo ps # pipeline show
 fly -t leo up -p demo # unpause
 fly -t leo js -p demo # jobs show
 
-fly -t leo tj -j helloworld/hello-world-job -w # trigger job & watch
+fly -t leo tj -j demo/hello-world-job -w # trigger job & watch
