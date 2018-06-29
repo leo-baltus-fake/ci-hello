@@ -20,10 +20,7 @@ fly -t leo tj -j demo/hello-world-job -w # trigger job & watch
 
 fly -t leo bs # build show
 
-fly -t leo cr -r demo/my-git-repo # huh?
-error: Unexpected Response
-Status: 500 Internal Server Error
-Body:
+fly -t leo cr -r demo/my-git-repo # may give a 500 if the resource cannot be checked
 ```
 ## execute tasks
 https://concourse-ci.org/running-tasks.html
