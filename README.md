@@ -11,7 +11,7 @@ fly -t leo login -c https://concourse.gcp.npo-data.nl
 # set up pipeline
 ```
 cd ci
-fly -t leo sp -p demo -c pipeline.yml -l credentials.yml # setup pipeline
+fly -t leo sp -p demo -c pipeline-hello.yml -l credentials.yml # setup pipeline
 fly -t leo ps # pipeline show
 fly -t leo up -p demo # unpause
 fly -t leo js -p demo # jobs show
